@@ -196,16 +196,3 @@ footer {
 }
 
 .mic-icon svg { fill: #8ab4f8 !important; }  /* nice blue mic */
-
-.ai-mode {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  background: #3c4043;
-  border: 1px solid #5f6368;
-  border-radius: 999px;
-  padding: 6px 12px;
-  font-size: 13px;
-  color: #e8eaed;
-  cursor: pointer;
-}
