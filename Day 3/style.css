@@ -1,0 +1,140 @@
+:root {
+  --color-primary: #7c3aed;
+  --color-primary-dark: #5b21b6;
+  --color-dark: #0f0f1a;
+  --color-light: #f8f9ff;
+  --color-gray: #a0a0c0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+header {
+  text-align: center;
+  padding: 5rem 0 4rem;
+}
+
+.logo-container {
+  margin-bottom: 1.5rem;
+}
+
+.logo {
+  width: 180px;
+  height: auto;
+  filter: drop-shadow(0 0 20px rgba(124, 58, 237, 0.5));
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  font-size: clamp(3.2rem, 8vw, 7.5rem);
+  letter-spacing: -0.04em;
+  background: linear-gradient(90deg, #c084fc, #a78bfa, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.8rem;
+  line-height: 0.9;
+}
+
+.tagline {
+  font-size: 1.4rem;
+  color: var(--color-gray);
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  margin-top: 0.5rem;
+}
+
+.section {
+  margin: 6rem 0;
+}
+
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--color-primary);
+  font-size: 2.8rem;
+  margin-bottom: 1.8rem;
+  text-align: center;
+}
+
+.font-showcase {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.font-card {
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(124,58,237,0.15);
+  border-radius: 16px;
+  padding: 2.5rem;
+  transition: all 0.3s ease;
+  
+}
+
+.font-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--color-primary);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.font-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+}
+
+.font-sample {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+.font-label {
+  display: inline-block;
+  background: rgba(124,58,237,0.15);
+  color: var(--color-primary);
+  padding: 0.4rem 1rem;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+}
+
+footer {
+  text-align: center;
+  padding: 4rem 0 2rem;
+  color: var(--color-gray);
+  font-size: 0.95rem;
+  border-top: 1px solid rgba(124,58,237,0.1);
+  margin-top: 6rem;
+}
+
+@media (max-width: 768px) {
+  .font-showcase {
+    grid-template-columns: 1fr;
+  }
+  
+  h1 {
+    font-size: clamp(3.8rem, 12vw, 6rem);
+  }
+}
