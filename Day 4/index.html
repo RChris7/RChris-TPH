@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative App - Connect to Opportunity</title>
+  <!-- Moved all styles to external stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <a href="#" class="logo">
+        <div class="logo-icon">CA</div>
+        <span class="logo-text">Creative App</span>
+      </a>
+      <nav>
+        <a href="#">Discover</a>
+        <a href="#">People</a>
+        <a href="#">Learning</a>
+        <a href="#">Jobs</a>
+        <button class="btn-join">Join now</button>
+        <button class="btn-signin">Sign in</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1>Welcome to your professional community</h1>
+        <p>Connect with the people and opportunities that can help you achieve your goals.</p>
+        <div class="hero-cta">
+          <div class="hero-input">
+            <label for="email">Email or phone number</label>
+            <input type="email" id="email" placeholder="Email or phone number">
+          </div>
+          <div class="hero-input">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password">
+          </div>
+          <button class="btn-hero">Sign in</button>
+          <div class="divider">or</div>
+          <button class="btn-google">
+            <svg width="20" height="20" viewBox="0 0 24 24">
+              <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+              <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+              <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+              <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+            </svg>
+            Continue with Google
+          </button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-illustration">
+          <div class="illustration-content">
+            <div class="profile-card">
+              <div class="profile-avatar"> <img src="data:image/jpeg;base64,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" alt=""></div>
+              <div class="profile-name">Sarah Johnson</div>
+              <div class="profile-title">Product Manager</div>
+            </div>
+            <div class="profile-card">
+              <div class="profile-avatar"> <img src="data:image/jpeg;base64,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" alt=""></div>
+              <div class="profile-name">Michael Kelvin</div>
+              <div class="profile-title">Software Engineer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="features-container">
+      <div class="features-header">
+        <h2>Find the right opportunity for you</h2>
+        <p>Explore how Creative App can help you achieve your professional goals</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20 6h-3V4c0-1.1-.9-2-2-2H9c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zM9 4h6v2H9V4zm11 15H4v-2h16v2zm0-5H4V8h3v1c0 .55.45 1 1 1s1-.45 1-1V8h6v1c0 .55.45 1 1 1s1-.45 1-1V8h3v6z"/>
+            </svg>
+          </div>
+          <h3>Find a job</h3>
+          <p>Discover millions of job opportunities with personalized recommendations based on your skills and interests.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+            </svg>
+          </div>
+          <h3>Build your network</h3>
+          <p>Connect with professionals in your industry, join communities, and grow your professional relationships.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
+            </svg>
+          </div>
+          <h3>Learn new skills</h3>
+          <p>Access thousands of courses taught by industry experts and earn certificates to showcase your expertise.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+            </svg>
+          </div>
+          <h3>Stay informed</h3>
+          <p>Get the latest news and insights from your industry, thought leaders, and your professional network.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="testimonials-container">
+      <div class="testimonials-header">
+        
+  <!-- Pricing Section -->
+  <section class="pricing">
+    <div class="pricing-container">
+      <div class="pricing-header">
+        <h2>Choose the right plan for you</h2>
+        <p>Unlock premium features to accelerate your professional growth</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-icon career">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+              <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+            </svg>
+          </div>
+          <h3>Career</h3>
+          <div class="price">$29.99<span>/mo</span></div>
+          <div class="billing">Billed monthly</div>
+          <ul class="pricing-features">
+            <li>See who viewed your profile</li>
+            <li>Stand out as a featured applicant</li>
+            <li>Get insights on job postings</li>
+            <li>Send InMail messages</li>
+          </ul>
+          <button class="btn-pricing secondary">Start free trial</button>
+        </div>
+        <div class="pricing-card featured">
+          <div class="pricing-icon business">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+              <path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/>
+            </svg>
+          </div>
+          <h3>Business</h3>
+          <div class="price">$59.99<span>/mo</span></div>
+          <div class="billing">Billed monthly</div>
+          <ul class="pricing-features">
+            <li>Everything in Career</li>
+            <li>Unlimited people browsing</li>
+            <li>Business insights & analytics</li>
+            <li>15 InMail messages per month</li>
+          </ul>
+          <button class="btn-pricing primary">Start free trial</button>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-icon sales">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+              <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/>
+            </svg>
+          </div>
+          <h3>Sales Navigator</h3>
+          <div class="price">$99.99<span>/mo</span></div>
+          <div class="billing">Billed monthly</div>
+          <ul class="pricing-features">
+            <li>Advanced lead search</li>
+            <li>Lead recommendations</li>
+            <li>CRM integrations</li>
+            <li>50 InMail messages per month</li>
+          </ul>
+          <button class="btn-pricing secondary">Start free trial</button>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-icon recruiter">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+              <path d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm-9-2V7H4v3H1v2h3v3h2v-3h3v-2H6zm9 4c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+            </svg>
+          </div>
+          <h3>Recruiter Lite</h3>
+          <div class="price">$149.99<span>/mo</span></div>
+          <div class="billing">Billed monthly</div>
+          <ul class="pricing-features">
+            <li>Advanced search filters</li>
+            <li>Candidate tracking</li>
+            <li>Team collaboration tools</li>
+            <li>150 InMail messages per month</li>
+          </ul>
+          <button class="btn-pricing secondary">Start free trial</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="cta-container">
+      <h2>Join your colleagues, classmates, and friends on Creative App</h2>
+      <p>Over 1 billion members | 65+ million jobs posted monthly | 2 million monthly newsletter publications</p>
+      <button class="btn-cta">Get started — it's free</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <div class="footer-logo-icon">CA</div>
+            <span class="footer-logo-text">Creative App</span>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>General</h4>
+          <ul>
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Browse Creative App</h4>
+          <ul>
+            <li><a href="#">Learning</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Salary</a></li>
+            <li><a href="#">Mobile</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Products</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Business Solutions</h4>
+          <ul>
+            <li><a href="#">Talent</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Sales</a></li>
+            <li><a href="#">Learning</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Directories</h4>
+          <ul>
+            <li><a href="#">Members</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Companies</a></li>
+            <li><a href="#">Featured</a></li>
+            <li><a href="#">Posts</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <a href="#">User Agreement</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">Copyright Policy</a>
+          <a href="#">Brand Policy</a>
+          <a href="#">Guest Controls</a>
+          <a href="#">Community Guidelines</a>
+        </div>
+        <div class="social-icons">
+          <a href="#" class="social-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.81 2.16-4.81 4.81 0 .38.04.75.13 1.1-4-.2-7.58-2.11-9.96-5.02-.42.72-.66 1.56-.66 2.46 0 1.68.85 3.16 2.14 4.02-.79-.02-1.53-.24-2.18-.6v.06c0 2.35 1.67 4.31 3.88 4.76-.4.1-.83.16-1.27.16-.31 0-.62-.03-.92-.08.63 1.96 2.45 3.39 4.61 3.43-1.69 1.32-3.83 2.1-6.15 2.1-.4 0-.8-.02-1.19-.07 2.19 1.4 4.78 2.22 7.57 2.22 9.07 0 14.02-7.52 14.02-14.02 0-.21 0-.42-.01-.63.96-.69 1.79-1.56 2.45-2.55z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2.04c-5.5 0-10 4.49-10 10.02 0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <p class="copyright">Creative App team © 2026</p>
+    </div>
+  </footer>
+</body>
+</html>
